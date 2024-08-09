@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition: .3s;
+}
+
+
+.shell_a {
+    width: 500px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff49;
+    border-radius: 50px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5) inset;
+    transform: translateY(-50px);
+}
+
+.title_a {
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: #fff;
+    text-shadow: 0 0 10px #ff9dff80;
+}

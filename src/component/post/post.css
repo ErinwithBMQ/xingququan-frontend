@@ -1,0 +1,20 @@
+.image-responsive_post {
+    max-width: 70%;
+    height: auto;
+}
+
+.between_post {
+    margin-right: 120px;
+}
+
+.lr_between {
+    margin-right: 30px;
+}
+
+.my_width {
+    width: 600px;
+}
+
+.between_comment {
+    margin-right: 60px;
+}
