@@ -19,3 +19,8 @@ jobs:
         run: |
           npm install
           npm run build
+      - name: 部署
+        uses: JamesIves/github-page-deploy-action@v4
+        with: 
+          branch: gh-pages
+          folder: build
