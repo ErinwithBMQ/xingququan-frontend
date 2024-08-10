@@ -1,1 +1,0 @@
-import{r,j as e}from"./index-D0tWTQow.js";import{a as o}from"./axios.config-BNfgfF5-.js";const n=()=>(r.useEffect(()=>{(async()=>{try{const t=await o.get("user/get_name");return console.log("身份校验成功"),console.log(t.data),t.data}catch(t){console.error("Error:",t)}})()},[]),e.jsx("div",{}));export{n as U};
