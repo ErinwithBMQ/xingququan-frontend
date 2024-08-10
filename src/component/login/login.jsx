@@ -14,7 +14,7 @@ function Login() {
         }
 
         try {
-            const response = await axios.get('http://127.0.0.1:7001/user/find_user', {
+            const response = await axios.get('http://47.99.174.164:7001/user/find_user', {
                 params: {
                     name,
                 },
@@ -24,7 +24,7 @@ function Login() {
 
             if (response.data !== false) {
                 console.log(response.data, "检测到用户信息");
-                const response2 = await axios.post('http://127.0.0.1:7001/user/secret', {
+                const response2 = await axios.post('http://47.99.174.164:7001/user/secret', {
                     name,
                     secret,
                 });

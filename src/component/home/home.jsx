@@ -103,7 +103,7 @@ function Home() {
                 <div
                     className="flex flex-col bg-pink-100 items-center shadow-2xl p-4 rounded-xl w-full h-full">
                     <div className="por mb-4">
-                        <img src={`http://127.0.0.1:7001/file/show?id=${message.image_id}`}
+                        <img src={`http://47.99.174.164:7001/file/show?id=${message.image_id}`}
                              alt="touxiang"/>
                     </div>
                     <div className={"bg-white items-center shadow-2xl p-2 rounded-xl w-fit h-full mb-4 mt-2"}>

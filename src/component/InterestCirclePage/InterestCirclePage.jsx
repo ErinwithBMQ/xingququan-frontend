@@ -70,7 +70,7 @@ function InterestCirclePage() {
                     <span className="text-xl font-semibold text-pink-200">返回</span>
                 </button>
                 <div className="por mb-4 mr-4 mt-20">
-                    <img src={`http://127.0.0.1:7001/file/show?id=${xqq_message.image_id}`} alt="xqq image"/>
+                    <img src={`http://47.99.174.164:7001/file/show?id=${xqq_message.image_id}`} alt="xqq image"/>
                 </div>
                 <div className={"shadow-xl w-1/4 p-3 mt-4 h-full rounded-xl bg-gray-100"}>
                     <div className={"text-4xl font-semibold text-blue-200"}>
@@ -124,7 +124,7 @@ function InterestCirclePage() {
                             </div>
 
                             {post.image_id !== 0 && <div className={"mb-4"}>
-                                <img src={`http://127.0.0.1:7001/file/show?id=${post.image_id}`} alt="xqq image"
+                                <img src={`http://47.99.174.164:7001/file/show?id=${post.image_id}`} alt="xqq image"
                                      className="image-responsive"/>
                             </div>}
 

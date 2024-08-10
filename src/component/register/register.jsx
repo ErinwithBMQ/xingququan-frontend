@@ -7,6 +7,7 @@ function Register() {
 
     const [name, setName] = useState('');
     const [secret, setSecret] = useState('');
+    const [secret2, setSecret2] = useState('');
     const [file, setFile] = useState(null);
 
     const handleFileChange = (e) => {
@@ -25,8 +26,13 @@ function Register() {
             return;
         }
 
+        if (secret !== secret2) {
+            alert('两次输入的密码不一致');
+            return;
+        }
+
         try {
-            const response = await axios.get('http://127.0.0.1:7001/user/find_user', {
+            const response = await axios.get('http://47.99.174.164:7001/user/find_user', {
                 params: {
                     name,
                 },
@@ -65,7 +71,7 @@ function Register() {
         }
 
         try {
-            const response = await axios.post('http://127.0.0.1:7001/user/create_user', {
+            const response = await axios.post('http://47.99.174.164:7001/user/create_user', {
                 name,
                 secret,
                 photo_id: image_id,
@@ -99,6 +105,14 @@ function Register() {
                         placeholder="Password"
                         value={secret}
                         onChange={(e) => setSecret(e.target.value)}
+                    />
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="再次确认密码"
+                        value={secret2}
+                        onChange={(e) => setSecret2(e.target.value)}
                     />
 
                     <div className="flex mt-4">

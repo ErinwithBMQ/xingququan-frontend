@@ -85,7 +85,7 @@ function ShowPost() {
                         </div>
                         <div className="flex bg-blue-100 p-4 rounded-xl shadow-xl w-full m-4">
                             <div className="por mb-4 mr-4">
-                                <img src={`http://127.0.0.1:7001/file/show?id=${creator_photo}`}
+                                <img src={`http://47.99.174.164:7001/file/show?id=${creator_photo}`}
                                      alt="xqq image"/>
                             </div>
                             <div className={"mr-6"}>
@@ -125,7 +125,7 @@ function ShowPost() {
                         </div>
                         <div className="bg-blue-100 p-4 rounded-xl shadow-xl w-full m-4">
                             {post.image_id !== 0 && <div className={"mb-4"}>
-                                <img src={`http://127.0.0.1:7001/file/show?id=${post.image_id}`} alt="xqq image"
+                                <img src={`http://47.99.174.164:7001/file/show?id=${post.image_id}`} alt="xqq image"
                                      className="image-responsive_post"/>
                             </div>}
                             <div className={"bg-white p-2 rounded-xl shadow-md w-full justify-center content-center"}>

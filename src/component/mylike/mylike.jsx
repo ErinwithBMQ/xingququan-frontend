@@ -66,7 +66,8 @@ function MyLike() {
                                 </div>
 
                                 {post.image_id !== 0 && <div className={"mb-4"}>
-                                    <img src={`http://127.0.0.1:7001/file/show?id=${post.image_id}`} alt="xqq image"
+                                    <img src={`http://47.99.174.164:7001/file/show?id=${post.image_id}`}
+                                         alt="xqq image"
                                          className="image-responsive0"/>
                                 </div>}
 

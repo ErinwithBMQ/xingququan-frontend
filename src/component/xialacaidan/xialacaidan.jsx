@@ -34,7 +34,7 @@ function Xialacaidan() {
                 }}>我的帖子</span>
             </li>
             <div className={"por1 mt-4"}>
-                <img src={`http://127.0.0.1:7001/file/show?id=${user_message.image_id}`} alt="xqq image"/>
+                <img src={`http://47.99.174.164:7001/file/show?id=${user_message.image_id}`} alt="xqq image"/>
             </div>
             <li className="button">
                 <span>我的互动</span>
