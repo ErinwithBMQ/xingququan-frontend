@@ -2,9 +2,17 @@
 
 ## React + Vite + Tailwind CSS
 
-Github Actions里有提交后自动打包部署的脚本，但是托管到Github Pages时，
-由于是通过https加载，而后端服务器是http，所以会产生错误，故不推荐使用产生的网址访问。要访问的话请访问http://47.99.174.164
+Github Actions里有提交后自动打包部署的脚本
 
 里面的所有url均为部署在阿里云服务器上的域名，不是本地域名。
 
-gh-pages里存放了打包后的产物。
+gh-pages分支里存放了打包后的产物。
+
+### 关于为什么Github Pages打开来是一片空白
+
+我在`vite.config.js`文件下没有加上`base:'/xingququan-frontend/'`，因为加了后下载代码在本地进行`npm run build`再启动会报错。
+
+但是如果加了这一行，Github Pages还是无法显示全部内容，因为GitHub Pages通过https加载，而后端服务器是http协议，会有错误。所以请不要使用GitHub
+Pages。
+要访问的话请访问
+http://47.99.174.164
