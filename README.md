@@ -8,6 +8,20 @@ Github Actions里有提交后自动打包部署的脚本
 
 gh-pages分支里存放了打包后的产物。
 
+### 两种启动方式：
+
+①下载源代码解压后，在根目录下依次执行：
+
+`npm install`
+
+`npm run build`
+
+`npm run dev`
+
+②下载自动打包好了的gh-pages分支下的代码，解压后在根目录下执行：
+
+`npm run preview`
+
 ### 关于为什么Github Pages打开来是一片空白
 
 我在`vite.config.js`文件下没有加上`base:'/xingququan-frontend/'`，因为加了后下载代码在本地进行`npm run build`再启动会报错。
