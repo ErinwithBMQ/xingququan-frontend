@@ -52,7 +52,7 @@ function CreateComment() {
             });
             console.log(response.data);
             alert('评论成功!');
-            window.location.href = `/post/${post_id}`;
+            window.location.href = `/post2/${post_id}`;
         } catch (error) {
             console.error(error);
         }
