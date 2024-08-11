@@ -4,7 +4,8 @@
 
 Github Actions里有提交后自动打包部署的脚本
 
-里面的所有url均为部署在阿里云服务器上的域名，不是本地域名。
+里面的所有url均为部署在阿里云服务器上的域名，不是本地域名。本地域名版本见
+https://github.com/ErinwithBMQ/xingququan
 
 gh-pages分支里存放了打包后的产物。
 
